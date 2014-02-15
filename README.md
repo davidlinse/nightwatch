@@ -1,6 +1,6 @@
 # Nightwatch
 
-[![Build Status](https://travis-ci.org/beatfactor/nightwatch.png?branch=master)](https://travis-ci.org/beatfactor/nightwatch) [![NPM version](https://badge.fury.io/js/nightwatch.png)](http://badge.fury.io/js/nightwatch)
+[![Build Status][0]][1] [![NPM version](https://badge.fury.io/js/nightwatch.png)](http://badge.fury.io/js/nightwatch)
 
 UI automated testing framework based on [Node.js](http://nodejs.org/) and [Selenium WebDriver](http://docs.seleniumhq.org/projects/webdriver/)
 
@@ -29,4 +29,8 @@ The tests for nightwatch are written using [nodeunit](https://github.com/caolan/
 To run the nodeunit tests do:
 ```sh
 $ npm test
-```  
+```
+
+
+[0]: https://travis-ci.org/davidlinse/nightwatch.png?branch=master
+[1]: https://travis-ci.org/davidlinse/nightwatch
