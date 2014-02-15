@@ -11,6 +11,6 @@ module.exports = {
         callback();
       }
       process.exit();
-    }) 
-  } 
-}
+    });
+  }
+};
