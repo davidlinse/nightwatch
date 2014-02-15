@@ -1,5 +1,6 @@
 # Nightwatch
 
+[![GitHub version](https://badge.fury.io/gh/davidlinse%2Fnightwatch.png)](http://badge.fury.io/gh/davidlinse%2Fnightwatch)
 [![Build Status][0]][1] [![NPM version](https://badge.fury.io/js/nightwatch.png)](http://badge.fury.io/js/nightwatch)
 
 UI automated testing framework based on [Node.js][5] and [Selenium WebDriver][10]
