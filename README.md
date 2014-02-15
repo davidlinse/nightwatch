@@ -10,7 +10,8 @@ UI automated testing framework based on [Node.js][5] and [Selenium WebDriver][10
 
 ### Selenium WebDriver standalone server
 
-First thing you need to download the selenium server jar file `selenium-server-standalone-2.x.x.jar` from here: 
+First thing you need to download the selenium server jar file
+`selenium-server-standalone-2.x.x.jar` from here:
 (https://code.google.com/p/selenium/downloads/list)
 
 ### Install Nightwatch
