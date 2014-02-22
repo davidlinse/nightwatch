@@ -1,0 +1,29 @@
+{
+  "configuration": {
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "maxSession": 5,
+    "port": 5555,
+    "host": your.ip.here,
+    "register": true,
+    "registerCycle": 5000,
+    "hubPort": 4444,
+    "hubHost": your.ip.here,
+    "browserSideLog": true,
+    "role": "node"
+  },
+  "capabilities": [{
+      "browserName": "chrome",
+      "maxInstances": 1,
+      "seleniumProtocol": "WebDriver",
+      "platform": "MAC",
+      "version": 33
+    },
+    {
+      "browserName": "*googlechrome",
+      "maxInstances": 1,
+      "seleniumProtocol": "Selenium",
+      "platform": "MAC",
+      "version": 33
+    }
+  ]
+}
