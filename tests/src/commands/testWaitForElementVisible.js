@@ -27,6 +27,12 @@ module.exports = {
       test.equal(assertion[0], false);
       test.equal(assertion[1], 'not visible');
       test.equal(assertion[4], true);
+    });
+
+    this.client.api.waitForElementVisible('//weblogin', 110, 50, function callback(result, instance) {
+      test.equal(assertion[0], false);
+      test.equal(assertion[1], 'not visible');
+      test.equal(assertion[4], true);
 
       test.done();
     });
@@ -43,6 +49,13 @@ module.exports = {
       test.equal(assertion[3], 'Timed out while waiting for element <#weblogin> to be visible for 55 milliseconds.');
       test.equal(assertion[1], 'not visible');
       test.equal(assertion[4], true);
+    });
+
+    this.client.api.waitForElementVisible('//weblogin', function callback(result, instance) {
+      test.equal(assertion[0], false);
+      test.equal(assertion[3], 'Timed out while waiting for element <//weblogin> to be visible for 55 milliseconds.');
+      test.equal(assertion[1], 'not visible');
+      test.equal(assertion[4], true);
 
       test.done();
     });
@@ -54,6 +67,15 @@ module.exports = {
       Array.prototype.unshift.apply(assertion, arguments);
     };
     this.client.api.globals.waitForConditionTimeout = 55;
+
+    this.client.api.waitForElementVisible('//weblogin', function callback(result, instance) {
+      test.equal(assertion[3], 'Test message <//weblogin> and a global 55 ms.');
+    }, 'Test message <%s> and a global %s ms.');
+
+    this.client.api.waitForElementVisible('div#weblogin', function callback(result, instance) {
+      test.equal(assertion[3], 'Test message <div#weblogin> and a global 55 ms.');
+    }, 'Test message <%s> and a global %s ms.');
+
     this.client.api.waitForElementVisible('#weblogin', function callback(result, instance) {
       test.equal(assertion[3], 'Test message <#weblogin> and a global 55 ms.');
       test.done();

@@ -16,6 +16,15 @@ module.exports = {
     });
   },
 
+  testSuccess_xpath : function(test) {
+    this.client.api.waitForElementPresent('//weblogin', 100, function callback(result, instance) {
+      test.equal(instance.expectedValue, 'found');
+      test.equal(result.status, 0);
+      test.equal(result.value.ELEMENT, '0');
+      test.done();
+    });
+  },
+
   testFailureWithCustomMessage : function(test) {
     this.client.api.waitForElementPresent('.weblogin', 100, function callback(result, instance) {
       test.equal(instance.message, 'Element .weblogin found in 100 milliseconds');

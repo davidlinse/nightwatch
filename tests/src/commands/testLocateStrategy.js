@@ -1,6 +1,4 @@
-var BASE_PATH = process.env.NIGHTWATCH_COV
-  ? 'lib-cov'
-  : 'lib';
+var BASE_PATH = process.env.NIGHTWATCH_COV ? 'lib-cov' : 'lib';
 var Runner = require('../../../'+ BASE_PATH +'/runner/run.js');
 
 module.exports = {
@@ -43,9 +41,23 @@ module.exports = {
     });
   },
 
+  'test run auto-detect locate-stragegy' : function(test) {
+    Runner.run([process.cwd() + '/sampletests/selector'], {
+      seleniumPort : 10195,
+      silent : true,
+      output : false,
+      globals : {
+        test : test
+      }
+    }, {
+      output_folder : false
+    }, function(err, results) {
+      test.done();
+    });
+  },
+
   tearDown : function(callback) {
     this.client = null;
-
     callback();
   }
-}
+};
