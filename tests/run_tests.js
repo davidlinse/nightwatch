@@ -1,5 +1,5 @@
 try {
-  var args = process.argv, reporter_type = 'default';
+  var args = process.argv, reporter_type = 'skip_passed';
   var reporters = require('nodeunit').reporters;
 
   if (args.length == 3) {
