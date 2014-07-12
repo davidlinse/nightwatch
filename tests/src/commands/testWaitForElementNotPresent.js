@@ -13,12 +13,12 @@ module.exports = {
       Array.prototype.unshift.apply(assertion, arguments);
     };
 
-    this.client.api.waitForElementNotPresent('.weblogin', 100, 50, function callback(result, instance) {
+    this.client.api.waitForElementNotPresent('faulty value', 100, 50, function callback(result, instance) {
       test.equal(instance.expectedValue, 'not found');
       test.equal(instance.rescheduleInterval, 50);
 
       test.equal(assertion[0], true);
-      test.equal(assertion[3].indexOf('Element <.weblogin> was not present after'), 0);
+      test.equal(assertion[3].indexOf('Element <faulty value> was not present after'), 0);
       test.equal(assertion[4], true); // abortOnFailure
       test.done();
     });
