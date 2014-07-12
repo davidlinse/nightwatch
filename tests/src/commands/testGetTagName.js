@@ -20,7 +20,7 @@ module.exports = {
       })
     });
 
-    client.getTagName('css selector', '#weblogin', function callback(result) {
+    client.getTagName('id', '#weblogin', function callback(result) {
       test.equals(result.value, 'div')
     }).getTagName('#weblogin', function callback(result) {
       test.equals(result.value, 'div')

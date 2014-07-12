@@ -22,7 +22,7 @@ module.exports = {
 
     client.getElementSize('#weblogin', function callback(result) {
       test.equals(result.value, 100);
-    }).getElementSize('css selector', '#weblogin', function callback(result) {
+    }).getElementSize('id', '#weblogin', function callback(result) {
       test.equals(result.value, 100);
       test.done();
     });

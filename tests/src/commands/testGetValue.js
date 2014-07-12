@@ -20,7 +20,7 @@ module.exports = {
       })
     });
 
-    client.getValue('css selector', '#weblogin', function callback(result) {
+    client.getValue('id', '#weblogin', function callback(result) {
       test.equals(result.value, 'test value')
     }).getValue('#weblogin', function callback(result) {
       test.equals(result.value, 'test value')

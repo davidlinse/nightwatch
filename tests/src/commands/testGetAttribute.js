@@ -22,7 +22,7 @@ module.exports = {
 
     client.getAttribute('#weblogin', 'class', function callback(result) {
       test.equals(result.value, 'test_class')
-    }).getAttribute('css selector', '#weblogin', 'class', function callback(result) {
+    }).getAttribute('id', '#weblogin', 'class', function callback(result) {
       test.equals(result.value, 'test_class')
       test.done();
     });

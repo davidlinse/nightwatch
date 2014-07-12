@@ -20,7 +20,7 @@ module.exports = {
       })
     });
 
-    client.isVisible('css selector', '#weblogin', function callback(result) {
+    client.isVisible('id', '#weblogin', function callback(result) {
       test.equals(result.value, true);
     }).isVisible('#weblogin', function callback(result) {
       test.equals(result.value, true);

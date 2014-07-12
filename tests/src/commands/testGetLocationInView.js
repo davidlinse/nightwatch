@@ -23,7 +23,7 @@ module.exports = {
       })
     });
 
-    client.getLocationInView('css selector', '#weblogin', function callback(result) {
+    client.getLocationInView('id', '#weblogin', function callback(result) {
       test.deepEqual(result.value, {x : 1,y : 0});
     }).getLocationInView('#weblogin', function callback(result) {
       test.deepEqual(result.value, {x : 1,y : 0});

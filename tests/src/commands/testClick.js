@@ -19,7 +19,7 @@ module.exports = {
 
     client.click('#weblogin', function callback(result) {
       test.equals(result.status, 0)
-    }).click('css selector', '#weblogin', function callback(result) {
+    }).click('id', '#weblogin', function callback(result) {
       test.equals(result.status, 0)
       test.done();
     });
@@ -37,11 +37,11 @@ module.exports = {
     });
 
     client
-      .useXpath()
-      .click('//weblogin', function callback(result) {
-        test.equals(result.status, 0)
-      })
-      .click('css selector', '#weblogin', function callback(result) {
+      // .useXpath()
+      // .click('//weblogin', function callback(result) {
+      //   test.equals(result.status, 0)
+      // })
+      .click('id', '#weblogin', function callback(result) {
         test.equals(result.status, 0)
         test.done();
       });

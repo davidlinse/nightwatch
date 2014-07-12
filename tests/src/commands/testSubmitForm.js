@@ -21,7 +21,7 @@ module.exports = {
 
     client.submitForm('#weblogin', function callback(result) {
       test.equals(result.status, 0);
-    }).submitForm('css selector', '#weblogin', function callback(result) {
+    }).submitForm('id', '#weblogin', function callback(result) {
       test.equals(result.status, 0);
       test.done();
     });

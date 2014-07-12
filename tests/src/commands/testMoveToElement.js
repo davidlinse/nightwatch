@@ -20,7 +20,7 @@ module.exports = {
       })
     });
 
-    client.moveTo('css selector', '#weblogin', null, null, function callback(result) {
+    client.moveTo('id', '#weblogin', null, null, function callback(result) {
       test.equals(result.status, 0)
     }).moveToElement('#weblogin', null, null, function callback(result) {
       test.equals(result.status, 0)

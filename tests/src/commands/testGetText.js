@@ -20,7 +20,7 @@ module.exports = {
       })
     });
 
-    client.getText('css selector', '#weblogin', function callback(result) {
+    client.getText('id', '#weblogin', function callback(result) {
       test.equals(result.value, 'sample text')
     }).getText('#weblogin', function callback(result) {
       test.equals(result.value, 'sample text')

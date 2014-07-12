@@ -16,7 +16,7 @@ module.exports = {
       });
 
       test.equal(command.request.method, 'POST');
-      test.equal(command.data, '{"using":"id","value":"#weblogin"}');
+      test.deepEqual(command.data, '{"using":"id","value":"weblogin"}');
       test.equal(command.request.path, '/wd/hub/session/1352110219202/element');
     });
   },
@@ -31,7 +31,7 @@ module.exports = {
       });
 
       test.equal(command.request.method, 'POST');
-      test.equal(command.data, '{"using":"id","value":"#weblogin"}');
+      test.deepEqual(command.data, '{"using":"id","value":"weblogin"}');
       test.equal(command.request.path, '/wd/hub/session/1352110219202/elements');
     });
   },
