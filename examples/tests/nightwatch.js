@@ -3,7 +3,7 @@ module.exports = {
     client
       .url('http://nightwatchjs.org')
       .waitForElementVisible('body', 1000)
-      .elements('css selector', '#index-container ul.features li', function (result) {
+      .elements('css selector', '.index-container ul.features li', function (result) {
 
         for (var i = 0; i < result.value.length; i++) {
           var element = result.value[i];
