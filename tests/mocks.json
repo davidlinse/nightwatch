@@ -60,6 +60,21 @@
       "response" : "{\"sessionId\":\"1352110219202\",\"status\":0,\"value\":{\"ELEMENT\":\"0\"},\"class\":\"org.openqa.selenium.remote.Response\",\"hCode\":604376696}"
     },
     {
+      "url" : "/wd/hub/session/1352110219202/element/0/displayed",
+      "postdata" : "{\"using\":\"css selector\",\"value\":\"div#weblogin\"}",
+      "response" : "{\"sessionId\":\"1352110219202\",\"status\":0,\"value\":{\"ELEMENT\":\"0\"},\"class\":\"org.openqa.selenium.remote.Response\",\"hCode\":604376696}"
+    },
+    {
+      "url" : "/wd/hub/session/1352110219202/element/0/displayed",
+      "postdata" : "{\"using\":\"id\",\"value\":\"weblogin\"}",
+      "response" : "{\"sessionId\":\"1352110219202\",\"status\":0,\"value\":{\"ELEMENT\":\"0\"},\"class\":\"org.openqa.selenium.remote.Response\",\"hCode\":604376696}"
+    },
+    {
+      "url" : "/wd/hub/session/1352110219202/element/0/displayed",
+      "postdata" : "{\"using\":\"xpath\",\"value\":\"//weblogin\"}",
+      "response" : "{\"sessionId\":\"1352110219202\",\"status\":0,\"value\":{\"ELEMENT\":\"0\"},\"class\":\"org.openqa.selenium.remote.Response\",\"hCode\":604376696}"
+    },
+    {
       "url" : "/wd/hub/session/1352110219202/buttondown",
       "postdata" : "{\"button\":0}",
       "response" : "{\"sessionId\":\"1352110219202\",\"status\":0,\"class\":\"org.openqa.selenium.remote.Response\",\"hCode\":604376696}"
