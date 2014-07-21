@@ -35,7 +35,7 @@ module.exports = {
       test.equal(assertion[0], false);
       test.equal(assertion[1], 'found');
       test.equal(assertion[2], 'not found');
-      test.equal(assertion[3], 'Timed out while waiting for element <#weblogin> to be removed for 60 milliseconds.');
+      test.equal(assertion[3], 'Timed out while waiting for element <weblogin> to be removed for 60 milliseconds.');
       test.equal(assertion[4], true); // abortOnFailure
       test.equal(result.status, 0);
       test.done();
